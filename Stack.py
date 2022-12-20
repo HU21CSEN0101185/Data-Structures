@@ -1,21 +1,21 @@
 class Stack:
     def __init__(self):
-        self.items = []
+        self.its = []
 
-    def push(self, item):
-        self.items.append(item)
+    def push(self, it):
+        self.its.append(it)
 
     def pop(self):
-        return self.items.pop()
+        return self.its.pop()
 
     def peek(self):
-        return self.items[-1]
+        return self.its[-1]
 
     def is_empty(self):
-        return not self.items
+        return not self.its
     def display(self):
-        for item in self.items:
-            print(item)
+        for item in self.its:
+            print(it)
 
 
 def print_menu():
@@ -35,8 +35,8 @@ while True:
     choice = int(input('Enter your choice: '))
 
     if choice == 1:
-        item = input('Enter an item to push: ')
-        stack.push(item)
+        it = input('Enter an item to push: ')
+        stack.push(it)
     elif choice == 2:
         if stack.is_empty():
             print('The stack is empty.')
